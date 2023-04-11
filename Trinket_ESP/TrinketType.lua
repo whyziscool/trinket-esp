@@ -1,6 +1,6 @@
 return function(Object: Instance)
-	local Particle: ParticleEmitter = Object:FindFirstChildWhichIsA("PointLight", true)
-	local Light: PointLight = Object:FindFirstChildWhichIsA("PointLight")
+	local Particle: ParticleEmitter = Object:FindFirstChildWhichIsA('PointLight', true)
+	local Light: PointLight = Object:FindFirstChildWhichIsA('PointLight')
 	
 	if Object:IsA('MeshPart') then
 		if Object.MeshId == 'rbxassetid://5196551436' then
