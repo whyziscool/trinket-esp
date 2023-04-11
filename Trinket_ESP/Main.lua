@@ -34,7 +34,7 @@ local function NewESP(Object, Info)
 		Center = true,
 		Font = 2,
 		Outline = true,
-		Size = 14
+		Size = 16
 	})
 	
 	Cache[Object] = {
