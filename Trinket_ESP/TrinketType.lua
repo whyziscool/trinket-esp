@@ -4,57 +4,129 @@ return function(Object: Instance)
 	
 	if Object:IsA('MeshPart') then
 		if Object.MeshId == 'rbxassetid://5196551436' then
-			return 'Amulet'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Amulet'
+			}
 		elseif Object.MeshId == 'rbxassetid://923469333' then
-			return 'Candy'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Candy'
+			}
 		elseif Object.MeshId == 'rbxassetid://5204003946' then
-			return 'Goblet'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Goblet'
+			}
 		elseif Object.MeshId == 'rbxassetid://2520762076' then
-			return 'Howler Friend'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Howler Friend'
+			}
 		elseif Object.MeshId == 'rbxassetid://5196577540' then
-			return 'Old Amulet'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Old Amulet'
+			}
 		elseif Object.MeshId == 'rbxassetid://5196782997' then
-			return 'Old Ring'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Old Ring'
+			}
 		elseif Object.MeshId == 'rbxassetid://5196776695' then
-			return 'Ring'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Ring'
+			}
 		elseif Object.MeshId == 'rbxassetid://5204453430' then
-			return 'Scroll'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Scroll'
+			}
 		end
 	elseif Object:IsA('Part') then
 		if Object.Color == Color3.fromRGB(89, 34, 89) then
-			return '???'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = '???'
+			}
 		elseif Object.Color == Color3.fromRGB(164, 187, 190) then
-			return 'Diamond'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Diamond'
+			}
 		elseif Object.Color == Color3.fromRGB(0, 184, 49) then
-			return 'Emerald'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Emerald'
+			}
 		elseif Object.Color == Color3.fromRGB(128, 187, 219) then
-			return 'Fairfrozen'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Fairfrozen'
+			}
 		elseif Object.Color == Color3.fromRGB(254, 85, 100) then
-			return 'Ice Essence'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Ice Essence'
+			}
 		elseif Object.Color == Color3.fromRGB(248, 248, 248) then
-			return 'Opal'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Opal'
+			}
 		elseif Object.Color == Color3.fromRGB(255, 0, 191) then
-			return 'Rift Gem'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Rift Gem'
+			}
 		elseif Object.Color == Color3.fromRGB(16, 42, 220) then
-			return 'Sapphire'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Sapphire'
+			}
 		elseif Object.Color == Color3.fromRGB(255, 255, 0) then
-			return 'Spider Cloak'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Spider Cloak'
+			}
 		end
 	elseif Object:IsA('UnionOperation') then
 		if Light.Color == Color3.fromRGB(255, 255, 255) then
-			return 'Amulet of the White King'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Amulet of the White King'
+			}
 		elseif Object.Color == Color3.fromRGB(111, 113, 125) then
-			return 'Idol of the Forgotten'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Idol of the Forgotten'
+			}
 		elseif Object.Color == Color3.fromRGB(248, 248, 248) and not Object.UsePartColor then
-			return [[Lannis's Amulet]]
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = [[Lannis's Amulet]]
+			}
 		elseif Object.Color == Color3.fromRGB(29, 46, 58) then
-			return 'Night Stone'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Night Stone'
+			}
 		elseif Object.Color == Color3.fromRGB(255, 89, 89) then
-			return [[Philosopher's Stone]]
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = [[Philosopher's Stone]]
+			}
 		elseif Object.Color == Color3.fromRGB(248, 217, 109) then
-			return 'Scroom Key'
+			return {
+				Color = Color3.fromRGB(184, 115, 51),
+				Name = 'Scroom Key'
+			}
 		end
 	end
 	
-	return "Unkown"
+	return {
+		Color = Color3.fromRGB(255, 255, 255),
+		Name = 'Unknown'
+	}
 end
