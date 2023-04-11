@@ -62,7 +62,7 @@ return function(Object: Instance)
 			}
 		elseif Object.Color == Color3.fromRGB(128, 187, 219) then
 			return {
-				Color = Color3.fromRGB(255, 105, 180),
+				Color = Color3.fromRGB(255, 0, 255),
 				Name = 'Fairfrozen'
 			}
 		elseif Object.Color == Color3.fromRGB(254, 85, 100) then
@@ -92,14 +92,14 @@ return function(Object: Instance)
 			}
 		elseif Object.Color == Color3.fromRGB(255, 255, 0) then
 			return {
-				Color = Color3.fromRGB(255, 105, 180),
+				Color = Color3.fromRGB(255, 0, 255),
 				Name = 'Spider Cloak'
 			}
 		end
 	elseif Object:IsA('UnionOperation') then
 		if Light and Light.Color == Color3.fromRGB(255, 255, 255) then
 			return {
-				Color = Color3.fromRGB(255, 105, 180),
+				Color = Color3.fromRGB(255, 0, 255),
 				Name = 'Amulet of the White King'
 			}
 		elseif Object.Color == Color3.fromRGB(111, 113, 125) then
@@ -109,22 +109,22 @@ return function(Object: Instance)
 			}
 		elseif Object.Color == Color3.fromRGB(248, 248, 248) and not Object.UsePartColor then
 			return {
-				Color = Color3.fromRGB(255, 105, 180),
+				Color = Color3.fromRGB(255, 0, 255),
 				Name = [[Lannis's Amulet]]
 			}
 		elseif Object.Color == Color3.fromRGB(29, 46, 58) then
 			return {
-				Color = Color3.fromRGB(255, 105, 180),
+				Color = Color3.fromRGB(255, 0, 255),
 				Name = 'Night Stone'
 			}
 		elseif Object.Color == Color3.fromRGB(255, 89, 89) then
 			return {
-				Color = Color3.fromRGB(255, 105, 180),
+				Color = Color3.fromRGB(255, 0, 255),
 				Name = [[Philosopher's Stone]]
 			}
 		elseif Object.Color == Color3.fromRGB(248, 217, 109) then
 			return {
-				Color = Color3.fromRGB(255, 105, 180),
+				Color = Color3.fromRGB(255, 0, 255),
 				Name = 'Scroom Key'
 			}
 		end
