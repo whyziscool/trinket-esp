@@ -5,17 +5,17 @@ return function(Object: Instance)
 	if Object:IsA('MeshPart') then
 		if Object.MeshId == 'rbxassetid://5196551436' then
 			return {
-				Color = Color3.fromRGB(227, 150, 62),
+				Color = Color3.fromRGB(255, 191, 0),
 				Name = 'Amulet'
 			}
 		elseif Object.MeshId == 'rbxassetid://923469333' then
 			return {
-				Color = Color3.fromRGB(227, 150, 62),
+				Color = Color3.fromRGB(255, 191, 0),
 				Name = 'Candy'
 			}
 		elseif Object.MeshId == 'rbxassetid://5204003946' then
 			return {
-				Color = Color3.fromRGB(227, 150, 62),
+				Color = Color3.fromRGB(255, 191, 0),
 				Name = 'Goblet'
 			}
 		elseif Object.MeshId == 'rbxassetid://2520762076' then
@@ -25,22 +25,22 @@ return function(Object: Instance)
 			}
 		elseif Object.MeshId == 'rbxassetid://5196577540' then
 			return {
-				Color = Color3.fromRGB(227, 150, 62),
+				Color = Color3.fromRGB(255, 191, 0),
 				Name = 'Old Amulet'
 			}
 		elseif Object.MeshId == 'rbxassetid://5196782997' then
 			return {
-				Color = Color3.fromRGB(227, 150, 62),
+				Color = Color3.fromRGB(255, 191, 0),
 				Name = 'Old Ring'
 			}
 		elseif Object.MeshId == 'rbxassetid://5196776695' then
 			return {
-				Color = Color3.fromRGB(227, 150, 62),
+				Color = Color3.fromRGB(255, 191, 0),
 				Name = 'Ring'
 			}
 		elseif Object.MeshId == 'rbxassetid://5204453430' then
 			return {
-				Color = Color3.fromRGB(227, 150, 62),
+				Color = Color3.fromRGB(255, 191, 0),
 				Name = 'Scroll'
 			}
 		end
@@ -72,7 +72,7 @@ return function(Object: Instance)
 			}
 		elseif Object.Color == Color3.fromRGB(248, 248, 248) then
 			return {
-				Color = Color3.fromRGB(227, 150, 62),
+				Color = Color3.fromRGB(255, 191, 0),
 				Name = 'Opal'
 			}
 		elseif Object.Color == Color3.fromRGB(255, 0, 191) then
@@ -99,7 +99,7 @@ return function(Object: Instance)
 			}
 		elseif Object.Color == Color3.fromRGB(111, 113, 125) then
 			return {
-				Color = Color3.fromRGB(227, 150, 62),
+				Color = Color3.fromRGB(255, 191, 0),
 				Name = 'Idol of the Forgotten'
 			}
 		elseif Object.Color == Color3.fromRGB(248, 248, 248) and not Object.UsePartColor then
