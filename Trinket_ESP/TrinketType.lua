@@ -80,6 +80,11 @@ return function(Object: Instance)
 				Color = Color3.fromRGB(255, 105, 180),
 				Name = 'Rift Gem'
 			}
+		elseif Object.Color == Color3.fromRGB(255, 0, 0) then
+			return {
+				Color = Color3.fromRGB(210, 43, 43),
+				Name = 'Ruby'
+			}
 		elseif Object.Color == Color3.fromRGB(16, 42, 220) then
 			return {
 				Color = Color3.fromRGB(0, 71, 171),
@@ -114,7 +119,7 @@ return function(Object: Instance)
 			}
 		elseif Object.Color == Color3.fromRGB(255, 89, 89) then
 			return {
-				Color = Color3.fromRGB(255, 36, 0),
+				Color = Color3.fromRGB(210, 43, 43),
 				Name = [[Philosopher's Stone]]
 			}
 		elseif Object.Color == Color3.fromRGB(248, 217, 109) then
