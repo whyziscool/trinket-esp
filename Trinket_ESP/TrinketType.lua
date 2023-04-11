@@ -92,7 +92,7 @@ return function(Object: Instance)
 			}
 		end
 	elseif Object:IsA('UnionOperation') then
-		if Light.Color == Color3.fromRGB(255, 255, 255) then
+		if Light and Light.Color == Color3.fromRGB(255, 255, 255) then
 			return {
 				Color = Color3.fromRGB(184, 115, 51),
 				Name = 'Amulet of the White King'
