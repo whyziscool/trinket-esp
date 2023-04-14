@@ -1,6 +1,8 @@
 local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
 
+local RenderDistance = 1200
+
 local Camera = Workspace.CurrentCamera
 local RenderStepped = RunService.RenderStepped
 
@@ -30,11 +32,18 @@ local function NewESP(Object, Info)
 		Thickness = 3,
 	})
 	
+	ESP.Distance = NewDrawing('Text', {
+		Center = true,
+		Font = 2,
+		Outline = true,
+		Size = 18
+	})
+	
 	ESP.Name = NewDrawing('Text', {
 		Center = true,
 		Font = 2,
 		Outline = true,
-		Size = 16
+		Size = 18
 	})
 	
 	Cache[Object] = {
@@ -59,9 +68,11 @@ local function Update()
 			RemoveESP(i); continue
 		end
 		
+		local Distance = math.floor((Camera.CFrame.Position - i.Position).Magnitude + 0.5)
 		local Pos, InView = Camera:WorldToViewportPoint(i.Position)
-		if not InView then
-			v.ESP.Box.Visible = false; v.ESP.BoxOutline.Visible = false; v.ESP.Name.Visible = false; continue
+		
+		if not InView or Distance > RenderDistance then
+			v.ESP.Box.Visible = false; v.ESP.BoxOutline.Visible = false; v.ESP.Distance.Visible = false; v.ESP.Name.Visible = false; continue
 		end
 		
 		local ScaleFactor = 1 / (Pos.Z * math.tan(math.rad(Camera.FieldOfView / 2)) * 2) * 100
@@ -76,6 +87,11 @@ local function Update()
 		v.ESP.BoxOutline.Size = v.ESP.Box.Size
 		v.ESP.BoxOutline.Visible = true
 		
+		v.ESP.Distance.Color = v.Info.Color
+		v.ESP.Distance.Text = tostring(Distance)
+		v.ESP.Distance.Position = Vector2.new(Pos.X, Pos.Y + Size * 0.5 + v.ESP.Distance.TextBounds.Y * 0.5)
+		v.ESP.Distance.Visible = true
+		
 		v.ESP.Name.Color = v.Info.Color
 		v.ESP.Name.Text = v.Info.Name
 		v.ESP.Name.Position = Vector2.new(Pos.X, Pos.Y - Size * 0.5 - v.ESP.Name.TextBounds.Y * 1.5)
@@ -85,13 +101,15 @@ end
 
 for _, v in pairs(Workspace:GetChildren()) do
 	if v:FindFirstChildWhichIsA('ClickDetector', true) and v:FindFirstChild('ID') then
-		NewESP(v, TrinketType(v))
+		local Info = TrinketType(v)
+		NewESP(v, Info)
 	end
 end
 
 Workspace.ChildAdded:Connect(function(Object)
 	if Object:FindFirstChildWhichIsA('ClickDetector', true) and Object:FindFirstChild('ID') then
-		NewESP(Object, TrinketType(Object))
+		local Info = TrinketType(Object)
+		NewESP(Object, Info)
 	end
 end)
 
