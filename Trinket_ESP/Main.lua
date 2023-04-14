@@ -34,14 +34,14 @@ local function NewESP(Object, Info)
 	
 	ESP.Distance = NewDrawing('Text', {
 		Center = true,
-		Font = 2,
+		Font = 0,
 		Outline = true,
 		Size = 18
 	})
 	
 	ESP.Name = NewDrawing('Text', {
 		Center = true,
-		Font = 2,
+		Font = 0,
 		Outline = true,
 		Size = 18
 	})
