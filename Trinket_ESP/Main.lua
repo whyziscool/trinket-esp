@@ -36,14 +36,14 @@ local function NewESP(Object, Info)
 		Center = true,
 		Font = 0,
 		Outline = true,
-		Size = 18
+		Size = 24
 	})
 	
 	ESP.Name = NewDrawing('Text', {
 		Center = true,
 		Font = 0,
 		Outline = true,
-		Size = 18
+		Size = 24
 	})
 	
 	Cache[Object] = {
