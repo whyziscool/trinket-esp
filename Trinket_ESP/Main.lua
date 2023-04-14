@@ -89,12 +89,12 @@ local function Update()
 		
 		v.ESP.Distance.Color = v.Info.Color
 		v.ESP.Distance.Text = tostring(Distance)
-		v.ESP.Distance.Position = Vector2.new(Pos.X, Pos.Y + Size * 0.5 + v.ESP.Distance.TextBounds.Y * 0.5)
+		v.ESP.Distance.Position = Vector2.new(Pos.X, Pos.Y + Size / 2)
 		v.ESP.Distance.Visible = true
 		
 		v.ESP.Name.Color = v.Info.Color
 		v.ESP.Name.Text = v.Info.Name
-		v.ESP.Name.Position = Vector2.new(Pos.X, Pos.Y - Size * 0.5 - v.ESP.Name.TextBounds.Y * 1.5)
+		v.ESP.Name.Position = Vector2.new(Pos.X, Pos.Y - Size / 2 - v.ESP.Name.TextBounds.Y)
 		v.ESP.Name.Visible = true
 	end
 end
