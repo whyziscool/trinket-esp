@@ -66,7 +66,7 @@ return function(Object: Instance)
 				Color = Color3.fromRGB(255, 0, 255),
 				Name = 'Fairfrozen'
 			}
-		elseif Object.Color == Color3.fromRGB(254, 85, 100) then
+		elseif Particle and Particle.Color == Color3.fromRGB(25, 185, 155) then
 			return {
 				Color = Color3.fromRGB(137, 207, 240),
 				Name = 'Ice Essence'
