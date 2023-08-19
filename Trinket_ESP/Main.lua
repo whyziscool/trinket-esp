@@ -7,7 +7,7 @@ local Camera = Workspace.CurrentCamera
 local RenderStepped = RunService.RenderStepped
 
 local Cache = {}
-local TrinketType = loadstring(game:HttpGet("https://raw.githubusercontent.com/DevZse/Rogue_Lineage/main/Trinket_ESP/TrinketType.lua"))()
+local TrinketType = loadstring(game:HttpGet("https://raw.githubusercontent.com/whyziscool/trinket-esp/main/Trinket_ESP/TrinketType.lua"))()
 
 local function NewDrawing(Type, Properties)
 	local Drawing = Drawing.new(Type)
